@@ -10,6 +10,13 @@ html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   padding: 24px 24px 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased ;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after{
+  box-sizing:inherit;
 }
 
 body {
@@ -123,6 +130,24 @@ a:focus {
   color: Crimson;
 }
 
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 4px 8px;
+  border-bottom: 1px solid gainsboro;
+}
+.odd {
+  background-color: whitesmoke;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -140,4 +165,39 @@ a:focus {
   background: #44c8f5;
   color: white;
   text-shadow: none;
+}
+
+/*
+    Media Queries
+    ---
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+*/
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html {
+    padding: 48px 48px 24px;
+  }
+  h1 {
+    font-size: 58px;
+    line-height: 64px;
+  }
+}
+
+/* Large devices (landscape tablets, desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
